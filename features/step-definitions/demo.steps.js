@@ -1,9 +1,9 @@
 import { Given, When, Then } from "@wdio/cucumber-framework";
 import { expect, $ } from "@wdio/globals";
 
-Given(/^user is on login page$/, async () => {
-  await browser.url("https://the-internet.herokuapp.com/login");
-});
+// Given(/^user is on login page$/, async () => {
+//   await browser.url("https://the-internet.herokuapp.com/login");
+// });
 
 When(/^user enters (.*) and (.*)$/, async (username, password) => {
   await $("#username").setValue(username);
