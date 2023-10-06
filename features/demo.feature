@@ -1,7 +1,7 @@
 Feature: Test Login Functionality
 
   Scenario Outline: check login with valid credentials
-    Given user is on login page
+    Given lancer la page "https://the-internet.herokuapp.com/login"
     When user enters <username> and <password>
     And clicks on login button
     Then this <message> is displayed
